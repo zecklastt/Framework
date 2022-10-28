@@ -19,9 +19,10 @@ export default function HomeScreen() {
 
     return <>
         <Input
+            style={{ width: 250, marginTop: 30, marginLeft: 75 }}
             placeholder='Pesquise aqui'
             onChangeText={(text) => onSearch(text)}
-
+            size={"large"}
         />
         <FlatList
             data={list}
